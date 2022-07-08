@@ -17,7 +17,7 @@ or
 
 ### Clone it in your local machine using GIT
 to get a local copy , clone the repository using git clone
-(https://github.com/Sanja969/Leaderboard.git)
+(git@github.com:Sanja969/bookstore.git)
 
 After you clone it run  the following commands
 
