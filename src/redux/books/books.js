@@ -4,9 +4,9 @@ const REMOVE = 'bookstore/books/REMOVE';
 export default function booksReducer(state = [], action = {}) {
   switch (action.type) {
     case ADD:
-      return action.data;
+      return [...state, action.book];
     case REMOVE:
-      return state.filter((book) => book.id !== action.data.id);
+      return state.filter((book) => book.id !== action.id);
     default: return state;
   }
 }
@@ -14,13 +14,13 @@ export default function booksReducer(state = [], action = {}) {
 export function addBook(book) {
   return {
     type: ADD,
-    data: book,
+    book,
   };
 }
 
-export function removeBook(book) {
+export function removeBook(id) {
   return {
     type: REMOVE,
-    data: book,
+    id,
   };
 }
