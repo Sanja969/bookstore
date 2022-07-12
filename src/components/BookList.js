@@ -2,14 +2,12 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Book from './Book';
 
-class BookList extends React.Component {
-  render() {
-    const { books } = this.props;
-    return (
-      books.map((book) => <Book key={book.id} book={book} />)
-    );
-  }
-}
+const BookList = (props) => {
+  const { removeBook, books } = props;
+  return (
+    books.map((book) => <Book key={book.id} book={book} removeBook={removeBook} />)
+  );
+};
 
 BookList.propTypes = {
   books: PropTypes.instanceOf(Array).isRequired,
