@@ -22,7 +22,7 @@ const Bookstore = () => {
   }, [dispatch]);
 
   return (
-    <div className="d-flex flex-column align-items-center mt-5 pt-5">
+    <div className="d-flex flex-column align-items-center bg-light bookstore">
       <BookList books={books} removeBook={remove} />
       <AddBook addBook={submitBook} />
     </div>

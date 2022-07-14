@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.categories {
+  padding: 120px 100px 200px 100px !important;
+}
+
+.navbar {
+  padding: 10px 100px !important;
+}
+
+.navbar > div {
+  height: 100% !important;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.avatar {
+  border: 1px solid #bfc2c5;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user {
+  color: #0290ff;
+  font-size: 25px;
+}
+
+.bookstore {
+  padding: 120px 100px 200px 100px !important;
+}
+
+.category {
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.author {
+  color: #4386bf !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.actionBtn {
+  border: none !important;
+  background-color: inherit;
+  color: #4386bf !important;
+  padding-left: 0;
+  border-right: 1px solid rgb(188, 183, 183) !important;
+  padding-right: 10px;
+  margin-right: 10px;
+  font-size: 0.875rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.progress {
+  background-color: inherit !important;
+  width: 4.25rem;
+  height: 4.25rem !important;
+  border-color: #379cf6 #379cf6 #379cf6 #e8e8e8;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 100% !important;
+  transform: rotate(45deg);
+}
+
+.blue-btn {
+  background-color: #0290ff !important;
+  font-size: smaller !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  border: 1px solid rgb(234, 228, 228);
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+.cetegory {
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 766px) {
+  .navbar {
+    padding: 10px 20px !important;
+  }
+
+  .bookstore {
+    padding: 120px 20px 200px 20px !important;
+  }
+
+  .book {
+    flex-direction: column;
+  }
+
+  .progress-box {
+    margin: 20px 0;
+  }
+
+  form {
+    flex-direction: column !important;
+  }
+
+  input {
+    margin-bottom: 20px !important;
+  }
+}

@@ -18,12 +18,12 @@ const AddBook = (props) => {
     addBook(title, author);
   };
   return (
-    <div className="w-75">
-      <h3 className="">Add new book</h3>
+    <div className="w-100 border-top mt-4 pt-4">
+      <h5 className="fw-bold text-secondary">ADD NEW BOOK</h5>
       <form className="d-flex justify-content-between">
         <input className="w-50" type="text" name="title" placeholder="Book title" onChange={addTitle} />
         <input className="" type="text" name="author" placeholder="Book author" onChange={addAuthor} />
-        <button className="btn btn-primary" type="button" value="Add Book" onClick={submitBook}>Add Book</button>
+        <button className="btn btn-primary blue-btn px-5" type="button" value="Add Book" onClick={submitBook}>Add Book</button>
       </form>
     </div>
   );
